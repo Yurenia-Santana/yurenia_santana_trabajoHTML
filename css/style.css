@@ -1,0 +1,34 @@
+/*---------------------------------------------
+VARIABLES
+--------------------------------------------- */
+:root{
+  /*Modo oscuro (dk) */
+  --color-bg-dk: #1a1919;
+
+  /* Modo claro (lh) */
+  --color-bg-lh: #c2b9b9;
+
+  /* Variables actuales */
+  --color-bg-current: var(--color-bg-dk);
+}
+/*---------------------------------------------
+RESET Y BASE
+--------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg-current);
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {}
