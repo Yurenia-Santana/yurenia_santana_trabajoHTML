@@ -75,12 +75,6 @@ header{
   color: var(--color-accent-current);
 }
 
-toggle-button {
-  padding: 0 20%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 
 .icono {
   width:40px;
