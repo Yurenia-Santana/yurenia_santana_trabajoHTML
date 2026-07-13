@@ -13,9 +13,9 @@ VARIABLES
   --color-accent-lh: #a36201;
 
     /* Variables actuales */
-  --color-bg-current: var(--color-bg-dk);
-  --color-text-current: var(--color-text-dk);
-  --color-accent-current: var(--color-accent-dk);
+  --color-bg-current: var(--color-bg-lh);
+  --color-text-current: var(--color-text-lh);
+  --color-accent-current: var(--color-accent-lh);
 }
 
 /*---------------------------------------------
@@ -48,8 +48,8 @@ HEADER
 --------------------------------------------- */
 header{
   display: flex;
-  padding: 2.5rem;
-  position: fixed;
+  padding: 0.2rem;
+  position:fixed;
   top: 0;
   left: 0;
   z-index:100;
@@ -66,8 +66,8 @@ header{
 }
 
 .navbar a {
-  text-decoration: none;
-  font-size: 1.2rem;
+  text-decoration:solid;
+  font-size: 3.2rem;
   transition: all 0.2s ease-in-out; 
 }
 
@@ -77,8 +77,8 @@ header{
 
 
 .icono {
-  width:40px;
-  height:40px;
+  width:100px;
+  height: 100px;
 }
 
 /*---------------------------------------------
@@ -102,6 +102,3 @@ HERO
   object-fit: cover;
 }
 
-.arrow {
-  font-size: 30px;
-}
