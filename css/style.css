@@ -75,30 +75,187 @@ header{
   color: var(--color-accent-current);
 }
 
+.navbar a.activo {
+    color: var(--color-accent-current);
+    font-weight: bold;
+    border-bottom: 2px var(--color-accent-current);
+}
 
 .icono {
-  width:100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 /*---------------------------------------------
 HERO
 --------------------------------------------- */
 
-.hero {
-  gap: 50px;
-  justify-content: start;
-  margin-top: 20vh;
+.carrusel-contenedor {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
 }
 
-.hero-container-imag {
-  width: 60%;
-  margin: 0 auto;
+.carrusel-pista {
+    display: flex;
+    width: 700%; /* 100% por cada imagen: 6 imágenes = 600% */
+    animation: deslizar 25s infinite;
 }
 
-.hero-container-imag img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.carrusel-pista img {
+    width: 100%; /* 100% dividido entre 6 imágenes */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: alejar 25s infinite;
 }
 
+@keyframes deslizar {
+    0%, 14%        { transform: translateX(0%); }
+    16.67%, 30.67% { transform: translateX(-16.67%); }
+    33.33%, 47.33% { transform: translateX(-33.33%); }
+    50%, 64%       { transform: translateX(-50%); }
+    66.67%, 80.67% { transform: translateX(-66.67%); }
+    83.33%, 97.33% { transform: translateX(-83.33%); }
+    100%           { transform: translateX(0%); }
+}
+
+@keyframes alejar {
+   0%    { transform: scale(1.15); }
+    14%   { transform: scale(1); }
+    16.67% { transform: scale(1.15); }
+    30.67% { transform: scale(1); }
+    33.33% { transform: scale(1.15); }
+    47.33% { transform: scale(1); }
+    50%   { transform: scale(1.15); }
+    64%   { transform: scale(1); }
+    66.67% { transform: scale(1.15); }
+    80.67% { transform: scale(1); }
+    83.33% { transform: scale(1.15); }
+    97.33% { transform: scale(1); }
+    100%  { transform: scale(1.15); }
+}
+
+/*---------------------------------------------
+PRESUPUESTO
+--------------------------------------------- */
+main form {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+fieldset {
+    border: 3px solid var(--color-accent-current);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--color-accent-current);
+    padding: 0 2rem;
+}
+
+form label {
+    display: block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fff;
+    color: #222;
+}
+
+form textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-current);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.form-checkbox label {
+    margin: 0;
+    font-weight: normal;
+}
+
+form button[type="submit"] {
+    background-color: var(--color-accent-current);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    opacity: 0.85;
+}
+
+/*---------------------------------------------
+FOOTER
+--------------------------------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.footer .icono-footer {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-direccion {
+    font-size: 0.9rem;
+}
+
+.footer-legal {
+    color: #fff;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}

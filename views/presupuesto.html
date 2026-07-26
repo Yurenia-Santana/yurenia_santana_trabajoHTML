@@ -3,23 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />
   </head>
 
   <body>
+    <header>
+      <nav class="navbar">
+        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/>
+        <a href="../index.html">Inicio</a>
+<a href="./portafolio.html">Portafolio</a>
+<a href="./modalidad.html">Modalidad</a>
+<a href="./presupuesto.html" class="activo">Presupuesto</a>
+<a href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
     <h1>Presupuesto</h1>
-    <a href="../index.html">volver</a>
-  </body>
 
   <form action="#" method="post">
     <fieldset>
       <legend>Datos personales</legend>
-
       <label for="nombre">Nombre</label><br />
       <input
         type="text"
         name="nombre"
         id="nombre"
         placeholder="Escriba su nombre"
+        required
       /><br />
 
       <label for="email">Correo</label><br />
@@ -28,6 +41,7 @@
         name="correo"
         id="email"
         placeholder="Escriba su correo"
+        required
       /><br />
 
       <label for="telefono">Telefono</label><br />
@@ -36,7 +50,54 @@
         name="telefono"
         id="telefono"
         placeholder="Escriba su telefono"
+        required
       /><br />
     </fieldset>
+
+    <fieldset>
+      <legend>Tu consulta</legend>
+      <label for="info">Solicite más información</label><br />
+    <textarea
+    name="info"
+    id="info"
+    placeholder="Cuéntanos qué necesitas"
+    required
+></textarea><br />
+    <div class="form-checkbox">
+    <input type="checkbox" name="privacidad" id="privacidad" required />
+    <label for="privacidad">Acepto la política de privacidad</label>
+    
+</div>
+</fieldset>
+<button type="submit">Enviar</button>
+
   </form>
+</main>
+
+ 
+  <footer>
+    <div class="footer">
+        <div class="footer-redes">
+            <a href="https://instagram.com/yureniasantana_" target="_blank" rel="noopener">
+                <img src="../assets/icons/instagram-logo-facebook-2-fondo_negro_svgrepo-com.svg" alt="Instagram" class="icono-footer">
+            </a>
+            <a href="https://x.com/YureniaSantana" target="_blank" rel="noopener">
+                <img src="../assets/icons/X_icon.svg" alt="X (Twitter)" class="icono-footer">
+            </a>
+            <a href="https://tiktok.com/@yureniasantana" target="_blank" rel="noopener">
+                <img src="../assets/icons/social-tiktok-svgrepo-com_fondo_negro.svg" alt="TikTok" class="icono-footer">
+            </a>
+            <a href="https://youtube.com/@yureniasantana" target="_blank" rel="noopener">
+                <img src="../assets/icons/youtube-2-logo-svgrepo-com_fondo_negro.svg" alt="YouTube" class="icono-footer">
+            </a>
+            <a href="https://facebook.com/yureniasantana" target="_blank" rel="noopener">
+                <img src="../assets/icons/social-facebook-svgrepo-com_fondo_negro.svg" alt="Facebook" class="icono-footer">
+            </a>
+        </div>
+        <p class="footer-direccion">Calle San Vicente 5, Valencia, España</p>
+        <a href="#" class="footer-legal">Aviso legal</a>
+        <p>&copy; 2026 Yurenia Santana</p>
+     </div>
+    </footer>
+  </body>
 </html>
