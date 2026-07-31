@@ -3,43 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="../css/style.css" />
-     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />
+    <title>Portafolio</title> <!--Nombre principal de la página web-->
+    <link rel="stylesheet" href="../css/style.css" /> <!--Enlace del archivo CSS a la página portafolio.html-->
+     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />  <!--Logo de la empresa añadido al nombre de la página web-->
   </head>
  <body>
     <header>
-      <nav class="navbar">
-        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/>
+        <div class="navbar-superior"> <!--Nombre de la empresa que aparecerá en todas las páginas-->
+           <h1 class="nombre-escuela">APRENDE PIANO</h1>
+       </div>
+
+      <nav class="navbar"> <!--Menú de navegación que permite navegar por todas las páginas y que encontramos en todas las páginas-->
+        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/> <!--Logo de la empresa-->
         <a href="../index.html">Inicio</a>
-        <a href="../views/portafolio.html" class="activo">Portafolio</a>
-        <a href="../views/modalidad.html">Modalidad</a>
-        <a href="../views/presupuesto.html">Presupuesto</a>
-        <a href="../views/contacto.html">Contacto</a>
+        <a href="./portafolio.html" class="activo">Portafolio</a>
+        <a href="./presupuesto.html">Presupuesto</a>
+        <a href="./contacto.html">Contacto</a>
       </nav>
     </header>
  
-   <main>
-   <h1>Portafolio</h1>
-    <a href="../index.html">Volver</a>
-    <img
-            src="../assets/images/presencial_1.webp"
-            alt="Conversando">
-            <img
-            src="../assets/images/presencial_2.webp"
-            alt="Niña escribiendo sobre el piano">
-            <img
-            src="../assets/images/presencial_3.webp"
-            alt="Juego de instrumentos musicales">
-            <img
-            src="../assets/images/presencial_4.webp"
-            alt="Piano vertical">
-            <img
-            src="../assets/images/presencial_5.webp"
-            alt="Teclado">
-  </main>
- </body>          
- <footer>
+   <main class="main-modalidad"> <!--Galería de la empresa que muestra las modalidades de servicios que presta la empresa-->
+  <h2>Quiénes somos</h2>
+    <p>Somos una escuela de piano con alta trayectoria en la ciudad de Valencia.</p>
+    <p>Ofrecemos clases de piano y de lenguaje musical de cualquier nivel.</p>
+    <p>Ofrecemos dos modalidades en nuestra escuela: presencial y online.</p>
+
+    <div class="columnas-modalidad">
+     <section class="galeria-modalidad">
+        <h3>Modalidad presencial</h3>
+        <div class="mini-carrusel-contenedor">
+        <div class="mini-carrusel-pista">
+          <img src="../assets/images/presencial_1.webp" alt="Conversando">
+          <img src="../assets/images/presencial_2.webp" alt="Niña escribiendo sobre el piano">
+          <img src="../assets/images/presencial_3.webp" alt="Juego de instrumentos musicales">
+          <img src="../assets/images/presencial_4.webp" alt="Piano vertical">
+          <img src="../assets/images/presencial_5.webp" alt="Teclado">
+        </div>
+    </div>
+        <a href="./presupuesto.html" class="btn-presupuesto">Pide presupuesto para clases presenciales</a> <!--Enlace que lleva a la página de presupuesto-->
+      </section>
+
+      <section class="galeria-modalidad">
+        <h3>Modalidad online</h3>
+        <div class="galeria">
+          <img src="../assets/images/portada_1_online_1.webp" alt="Clase online de piano">
+        </div>
+        <a href="./presupuesto.html" class="btn-presupuesto">Pide presupuesto para clases online</a> <!--Enlace que lleva a la página de presupuesto-->
+      </section>
+      </div>
+    </main>
+         
+ <footer> <!--Pie de página que contiene los logotipos de redes sociales, dirección de la empresa y aviso legal y está presente en todas las páginas -->
     <div class="footer">
         <div class="footer-redes">
             <a href="https://instagram.com/yureniasantana_" target="_blank" rel="noopener">
@@ -61,4 +75,7 @@
         <p class="footer-direccion">Calle San Vicente 5, Valencia, España</p>
         <a href="#" class="footer-legal">Aviso legal</a>
         <p>&copy; 2026 Yurenia Santana</p>
+    </div>
+ </footer>         
+</body>         
 </html>

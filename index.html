@@ -3,25 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Yurenia_Santana_trabajoHTML</title>
-    <link rel="icon" href="./assets/icons/logo_escuela_piano_f_negro.svg" />
+    <link rel="stylesheet" href="./css/style.css" /> <!--Enlace del archivo CSS a la página HTML-->
+    <title>Yurenia_Santana_trabajoHTML</title>   <!--Nombre principal de la página web-->
+    <link rel="icon" href="./assets/icons/logo_escuela_piano_f_negro.svg" />  <!--Logo de la empresa añadido al nombre de la página web-->
   </head>
 
   <body>
     <header>
-      <nav class="navbar">
-        <img src="./assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/>
+       <div class="navbar-superior">  <!--Nombre de la empresa que aparecerá en todas las páginas-->
+           <h1 class="nombre-escuela">APRENDE PIANO</h1> 
+       </div>
+
+      <nav class="navbar"> <!--Menú de navegación que permite navegar por todas las páginas y que encontramos en todas las páginas-->
+        <img src="./assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/> <!--Logo de la empresa-->
         <a href="./index.html" class="activo">Inicio</a>
         <a href="./views/portafolio.html">Portafolio</a>
-        <a href="./views/modalidad.html">Modalidad</a>
         <a href="./views/presupuesto.html">Presupuesto</a>
         <a href="./views/contacto.html">Contacto</a>
+
+        <div class="auth-links"> <!--Enlace creado para el acceso a los alumnos de la escuela. De momento no lleva a otra página ya que es un extra de lo que pide el trabajo. Su funcionalidad se desarrollará en trabajos posteriores-->
+            <a href="#" class="btn-nav-texto">Entra</a>
+            <span class="auth-separador">/</span>
+            <a href="#" class="btn-nav-texto">Regístrate</a>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <div class="carrusel-contenedor">
+    <main> <!--Portada del sitio web-->
+      <div class="carrusel-contenedor"> <!--Imagenes de la empresa en carrusel-->
         <div class="carrusel-pista">
           <img
             src="./assets/images/portada_2.webp"
@@ -43,10 +52,32 @@
             alt="Chica en clase de piano">
         </div>     
       </div>
+
+  <section class="seccion-intro"> <!--Contenido principal de la empresa estructurado en tres secciones-->
+     <h2>Estudia con nosotros</h2>
+     <p>Somos una escuela con más de 15 de años de experiencia. Nos adaptamos a tus gustos musicales e intereses. Contamos con los mejores profesores de la ciudad que harán ameno y fácil el aprendizaje del instrumento.</p>
+      <p>Nuestros pianos son los mejores para que puedas tener la mejor sensación a la hora de tocar.</p>
+      <p>Disfrutaremos cada momento y el tiempo pasará tan rápido que querrás continuar la clase.</p>
+      <p>Estamos ubicados en todo el centro de la ciudad con buen acceso en transporte público y con parking cercano.</p>
+      <p>Pregunta por nuestros precios y horarios en Presupuesto</p>
+  </section>
+
+  <section class="seccion-requisitos">
+     <h2>Qué necesitas para comenzar</h2>
+     <p>Lo más importante son las ganas de aprender. Es recomendable contar con un piano en casa para poder practicar lo que ves en clase.</p>
+      <p>No importa la edad ni los conocimientos previos, podemos comenzar desde cero y en poco tiempo habrás subido de nivel.</p>
+  </section>
+
+  <section class="seccion-metodologia">
+     <h2>Qué esperar</h2>
+     <p>La metodología de la clase partirá desde el inicio con un buen calentamiento hasta llegar a un desarrollo en donde alcanzaremos el mayor grado de concentración y aprendizaje para finalizar con el cierre y un repaso de todo lo aprendido en la sesión.</p> 
+     <p>Aplicamos en clases las nuevas tecnologías, por lo que el lenguaje musical lo aprenderemos y reforzaremos usando aplicaciones muy chulas.</p>
+     <p>Los contenidos se preparan en base a los gustos y necesidades del alumno; podemos ensayar canciones de cualquier género musical o podemos ayudarte con examenes especiales de conservatorio o a nivelarte en contenidos específicos.</p>
+     <p>A parte de las clases podemos preparar actividades especiales como conciertos, excursiones, festivales, prácticas para concursos y muchas cosas más.</p>
+  </section>
     </main>
-   </body>  
     
-    <footer>
+    <footer> <!--Pie de página que contiene los logotipos de redes sociales, dirección de la empresa y aviso legal y está presente en todas las páginas -->
     <div class="footer">
         <div class="footer-redes">
             <a href="https://instagram.com/yureniasantana_" target="_blank" rel="noopener">
@@ -68,5 +99,7 @@
         <p class="footer-direccion">Calle San Vicente 5, Valencia, España</p>
         <a href="#" class="footer-legal">Aviso legal</a>
         <p>&copy; 2026 Yurenia Santana</p>
+    </div>
 </footer> 
+ </body>
 </html>

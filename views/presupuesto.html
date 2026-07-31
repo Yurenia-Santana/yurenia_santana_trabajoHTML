@@ -3,26 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Presupuesto</title>
-    <link rel="stylesheet" href="../css/style.css" />
-     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />
+    <title>Presupuesto</title> <!--Nombre principal de la página web-->
+    <link rel="stylesheet" href="../css/style.css" /> <!--Enlace del archivo CSS a la página presupuesto.html-->
+     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />  <!--Logo de la empresa añadido al nombre de la página web-->
   </head>
 
   <body>
     <header>
-      <nav class="navbar">
-        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/>
+      <div class="navbar-superior"> <!--Nombre de la empresa que aparecerá en todas las páginas-->
+           <h1 class="nombre-escuela">APRENDE PIANO</h1>
+       </div>
+
+      <nav class="navbar"> <!--Menú de navegación que permite navegar por todas las páginas y que encontramos en todas las páginas-->
+        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/> <!--Logo de la empresa-->
         <a href="../index.html">Inicio</a>
-<a href="./portafolio.html">Portafolio</a>
-<a href="./modalidad.html">Modalidad</a>
-<a href="./presupuesto.html" class="activo">Presupuesto</a>
-<a href="./contacto.html">Contacto</a>
+        <a href="./portafolio.html">Portafolio</a>
+        <a href="./presupuesto.html" class="activo">Presupuesto</a>
+        <a href="./contacto.html">Contacto</a>
       </nav>
     </header>
 
-    <main>
-    <h1>Presupuesto</h1>
-
+  <main class="main-presupuesto"> <!--Formulario que comprueba los datos introducidos por el usuario-->
+    <h2>¡Únete a nuestra escuela!</h2>
+    <p>Infórmate de nuestros cursos sin compromiso</p>
   <form action="#" method="post">
     <fieldset>
       <legend>Datos personales</legend>
@@ -63,19 +66,16 @@
     placeholder="Cuéntanos qué necesitas"
     required
 ></textarea><br />
-    <div class="form-checkbox">
+    <div class="form-checkbox"> <!--Los usuarios aceptan la “Política de privacidad" de la empresa con este checkbox-->
     <input type="checkbox" name="privacidad" id="privacidad" required />
     <label for="privacidad">Acepto la política de privacidad</label>
-    
 </div>
 </fieldset>
-<button type="submit">Enviar</button>
-
+<button type="submit">Enviar</button> <!--Bortón de envío de la información suministrada por el usuario-->
   </form>
 </main>
-
  
-  <footer>
+  <footer> <!--Pie de página que contiene los logotipos de redes sociales, dirección de la empresa y aviso legal y está presente en todas las páginas -->
     <div class="footer">
         <div class="footer-redes">
             <a href="https://instagram.com/yureniasantana_" target="_blank" rel="noopener">

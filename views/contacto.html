@@ -3,28 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../css/style.css" />
-     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" />
+    <title>Contacto</title> <!--Nombre principal de la página web-->
+    <link rel="stylesheet" href="../css/style.css" /> <!--Enlace del archivo CSS a la página contacto.html-->
+     <link rel="icon" href="../assets/icons/logo_escuela_piano_f_negro.svg" /> <!--Logo de la empresa añadido al nombre de la página web-->
   </head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar">
-        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/>
+       <div class="navbar-superior"> <!--Nombre de la empresa que aparecerá en todas las páginas-->
+           <h1 class="nombre-escuela">APRENDE PIANO</h1>
+       </div>
+
+      <nav class="navbar"> <!--Menú de navegación que permite navegar por todas las páginas y que encontramos en todas las páginas-->
+        <img src="../assets/icons/logo_escuela_piano_f_negro.webp" alt="Logo" class="icono"/> <!--Logo de la empresa-->
         <a href="../index.html">Inicio</a>
-        <a href="../views/portafolio.html">Portafolio</a>
-        <a href="../views/modalidad.html">Modalidad</a>
-        <a href="../views/presupuesto.html">Presupuesto</a>
-        <a href="../views/contacto.html" class="activo">Contacto</a>
+        <a href="./portafolio.html">Portafolio</a>
+        <a href="./presupuesto.html">Presupuesto</a>
+        <a href="./contacto.html" class="activo">Contacto</a>
       </nav>
     </header>
-    <main> 
-    <h1>Contacto</h1>
-    <a href="../index.html">volver</a>
-  </main>
-  </body>
-  <footer>
+
+    <main class="main-contacto"> <!--Ubicación de la empresa y horarios-->
+      <section>
+          <h2>Dónde estamos</h2>
+          <p>Calle San Vicente 5, Valencia, España</p>
+          <p>634361709</p><br>
+              <h3>Horarios</h3>
+                   <h4>De lunes a viernes:</h4>
+                   <p>9:00h a 22:00h</p>
+                   <h4>Sábado</h4>
+                   <p>9:00h a 14:00h</p>
+                   <img src="../assets/images/ubicacion.webp" alt="Mapa de ubicación de la escuela de piano en Valencia" class="mapa"> <!--Mapa de la empresa-->
+      </section>
+     </main>
+
+  <footer> <!--Pie de página que contiene los logotipos de redes sociales, dirección de la empresa y aviso legal y está presente en todas las páginas -->
     <div class="footer">
         <div class="footer-redes">
             <a href="https://instagram.com/yureniasantana_" target="_blank" rel="noopener">
@@ -46,4 +59,7 @@
         <p class="footer-direccion">Calle San Vicente 5, Valencia, España</p>
         <a href="#" class="footer-legal">Aviso legal</a>
         <p>&copy; 2026 Yurenia Santana</p>
+    </div>
+  </footer>
+</body>
 </html>
