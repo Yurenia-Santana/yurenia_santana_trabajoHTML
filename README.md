@@ -12,7 +12,7 @@ Sitio web de una escuela de piano ficticia, desarrollado con HTML5 y CSS3.
 1. **Iconos SVG:** https://www.svgrepo.com/
 2. **Comprimir una imagen:** https://squoosh.app/
 3. MEDIR PERFORMANCE, ACCESIBILIDAD, BUENAS PRÁCTICAS Y SEO: https://web.dev/measure/
-
+   
 ## Estructura del proyecto
 
 ```
