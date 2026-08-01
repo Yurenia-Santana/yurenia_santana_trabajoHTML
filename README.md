@@ -14,7 +14,9 @@ Sitio web de una escuela de piano ficticia, desarrollado con HTML5 y CSS3.
 3. MEDIR PERFORMANCE, ACCESIBILIDAD, BUENAS PRÁCTICAS Y SEO: https://web.dev/measure/
 
 ## Estructura del proyecto
-TRABAJOFINAL/                                                                                                                           TRABAJOFINAL/
+
+...
+TRABAJOFINAL/                                                                           
 ├── assets/
 │   ├── icons/
 │   └── images/
@@ -25,7 +27,9 @@ TRABAJOFINAL/                                                                   
     ├── contacto.html
     ├── portafolio.html
     └── presupuesto.html
-└── index.html                                                                                                                                              
+└── index.html
+...
+
 ## Páginas
 Inicio (index.html) — Portada con carrusel de imágenes y tres secciones informativas.
 Portafolio (views/portafolio.html) — Galería de imágenes organizada por modalidad (presencial y online).
