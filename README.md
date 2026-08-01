@@ -15,8 +15,8 @@ Sitio web de una escuela de piano ficticia, desarrollado con HTML5 y CSS3.
 
 ## Estructura del proyecto
 
-...
-TRABAJOFINAL/                                                                           
+```
+TRABAJOFINAL/
 ├── assets/
 │   ├── icons/
 │   └── images/
@@ -28,7 +28,7 @@ TRABAJOFINAL/
     ├── portafolio.html
     └── presupuesto.html
 └── index.html
-...
+```
 
 ## Páginas
 Inicio (index.html) — Portada con carrusel de imágenes y tres secciones informativas.
