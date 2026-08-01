@@ -31,10 +31,11 @@ TRABAJOFINAL/
 ```
 
 ## Páginas
-Inicio (index.html) — Portada con carrusel de imágenes y tres secciones informativas.
-Portafolio (views/portafolio.html) — Galería de imágenes organizada por modalidad (presencial y online).
-Presupuesto (views/presupuesto.html) — Formulario de contacto con validación HTML5.
-Contacto (views/contacto.html) — Ubicación y datos de la escuela.
+
+- **Inicio** (`index.html`) — Portada con carrusel de imágenes y tres secciones informativas.
+- **Portafolio** (`views/portafolio.html`) — Galería de imágenes organizada por modalidad (presencial y online).
+- **Presupuesto** (`views/presupuesto.html`) — Formulario de contacto con validación HTML5.
+- **Contacto** (`views/contacto.html`) — Ubicación y datos de la escuela.
 
 ## Autora
 Yurenia Santana
